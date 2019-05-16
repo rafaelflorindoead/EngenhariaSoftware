@@ -1,0 +1,13 @@
+algoritmo idade
+var
+	idade, anoNascimento, anoAtual: inteiro
+inicio
+	escreva("Informe o ano de Nascimento")
+	leia(anoNascimento) //1982
+	escreva("Informe o ano atual")
+	leia(anoAtual) //2019
+	idade <- anoAtual - anoNascimento
+	//idade<-2019-1982
+	//idade<-37
+	escreva("Você tem ", idade ," anos")
+fim.

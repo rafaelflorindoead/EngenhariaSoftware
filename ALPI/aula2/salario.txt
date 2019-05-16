@@ -1,0 +1,12 @@
+algoritmo salarioLiquido
+var
+	salario_liquido, salario_bruto, desconto: real
+inicio
+	escreva("Informe o seu salário bruto")
+	leia(salario_bruto)
+	
+	desconto <- (salario_bruto * 11)/100
+	salario_liquido <- salario_bruto - desconto
+	
+	escreva("Salario liquido = ", salario_liquido)
+fim.
