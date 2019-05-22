@@ -1,0 +1,19 @@
+algoritmo idade
+var
+    anoNascimento, anoAtual, idade: inteiro
+inicio
+    escreva("Informe o ano de nascimento")
+    leia(anoNascimento)
+    anoAtual<-2019
+    idade<- anoAtual - anoNascimento
+    se(idade >= 16) entao
+    	escreva("Você pode votar")
+	senao
+		escreva("Você ainda não tem idade para votar")
+    fim_se
+    se(idade >= 18) entao
+    	escreva("Você pode dar entrada na sua habilitação")
+	senao
+		escreva("Você não pode dar entrada na sua habilitação")
+    fim_se
+fim.

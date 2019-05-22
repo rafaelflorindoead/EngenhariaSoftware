@@ -1,0 +1,16 @@
+algoritmo MaiorNumero
+var
+	valor1, valor2: inteiro
+inicio
+	/*escreva("Entre com o valor1")
+	leia(valor1)//5
+	escreva("Entre com o valor2")
+	leia(valor2)//8*/
+	escreva("Entre com o valor1 e o valor 2")
+	leia(valor1, valor2)//5
+	se(valor1 < valor2) entao//5<8
+		escreva("Valor 2 é o maior")
+	senao
+		escreva("Valor 1 é o maior ou igual ao valor2")
+	fim_se
+fim.

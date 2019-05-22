@@ -1,0 +1,24 @@
+algoritmo produto
+var
+    codigo: inteiro
+inicio
+    escreva("1 - Alimento não perecível")
+    escreva("2, 3, 4 - Alimento perecível")
+    escreva("5, 6 - Vestuário")
+    escreva("7 - Higiene Pessoal")
+	escreva("Entre com o código")
+	leia(codigo)
+	
+	caso codigo
+		seja 1 faça
+		    escreva ("Alimento não perecível")
+		seja 2, 3, 4 faça
+			escreva("Alimento perecível")
+		seja 5,6 faça
+			escreva("Vestuário")
+		seja 7 faça
+			escreva("Higiene Pessoal")
+		senao
+			escreva("Inválido")
+	fim_caso
+fim.

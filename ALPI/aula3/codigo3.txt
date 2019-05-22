@@ -1,0 +1,14 @@
+algoritmo PositivoNegativo
+var
+    n: inteiro
+inicio
+    escreva("Entre com um valor")
+    leia(n)
+    se(n >= 0) entao
+    	escreva("Numero positivo")
+    senao
+    	escreva("Numero Negativo")
+    fim_se
+fim.
+    
+    

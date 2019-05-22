@@ -1,0 +1,12 @@
+algoritmo parImpar
+var
+    numero: inteiro
+inicio
+    escreva("Entre com um número.")
+    leia(numero)
+    se(numero mod 2 = 0) entao
+    	escreva("Número par")
+    senao
+    	escreva("Numero Impar")
+    fim_se
+fim.
