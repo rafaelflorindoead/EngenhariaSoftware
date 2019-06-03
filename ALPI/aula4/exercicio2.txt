@@ -1,0 +1,24 @@
+Algoritmo verificarIdade
+var
+	idade, anoNascimento, anoAtual: inteiro
+
+inicio
+	escreva("Entre com o ano de nascimento:")
+	leia(anoNascimento)
+	escreva("Entre com o ano atual")
+	leia(anoAtual)
+	idade<-anoAtual-anoNascimento
+	
+	se(idade >= 16) entao
+		escreva("Com ", idade, " anos, você poderá Votar")
+	senao
+		escreva("Não poderá Votar, pois você ainda tem ", idade, "anos.")
+	fim_se
+	
+	se(idade >= 18) entao
+		escreva("Poderá dar inicio a sua habilitação")
+	senao
+		escreva("Deverá esperar um pouco mais")
+	fim_se
+	
+fim.

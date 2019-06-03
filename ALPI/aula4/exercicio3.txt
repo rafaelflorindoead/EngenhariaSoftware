@@ -1,0 +1,13 @@
+Algoritmo IMC
+var
+	imc, peso, altura: real
+inicio
+	escreva("Entre com o peso")
+	leia (peso)
+	escreva("Entre com a altura")
+	leia (altura)
+	
+	imc <- peso/(altura * altura)
+	
+	escreva("IMC = ", imc)
+fim.

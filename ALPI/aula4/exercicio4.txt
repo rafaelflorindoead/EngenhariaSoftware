@@ -1,0 +1,36 @@
+Algoritmo ValorFinalProduto
+var
+	codigo: inteiro
+	preco, desconto, novoPreco, valorParcela: real
+inicio
+	escreva("Entre com o código do produto.")
+	leia(codigo)
+	escreva("Entre com o preço do produto.")
+	leia(preco)
+	se (codigo = 1) entao
+		desconto <- (preco * 10)/100
+		novoPreco <- preco - desconto
+		escreva("Novo Preço = R$ ", novoPreco)
+	senao
+		se (codigo = 2) entao
+			desconto <- (preco * 5)/100
+			novoPreco <- preco - desconto
+			escreva("Novo Preço = R$ ", novoPreco)
+		senao
+			se (codigo = 3) entao
+				valorParcela = preco / 2
+				escreva("Valor das parcelas 2 x de R$ ", valorParcela)
+			senao
+				se (codigo = 4) entao
+					valorParcela = preco / 3
+					escreva("Valor das parcelas 2 x de R$ ", valorParcela)
+					desconto <- (preco * 10)/100
+					novoPreco <- preco + desconto
+					escreva("Novo Preço = R$ ", novoPreco)
+				senao
+					escreva("Código Inválido")
+				fim_se	
+			fim_se	
+		fim_se	
+	fim_se	
+fim.
