@@ -1,0 +1,17 @@
+algoritmo calcularQuadradoParametroReferencia
+    procedimento quadradoNumero(numero: inteiro var quad:inteiro)
+    inicio
+		se (numero > 0 ) entao
+			quad <- numero * numero
+		senao
+			escreva("Número negativo, fora do intervalo")
+		fim_se
+    fim_procedimento
+var
+	num, quadrado: inteiro
+inicio
+	escreva("Informe o número")
+	leia(num)
+	quadradoNumero(num, quadrado)
+	escreva("O quadrado de ", num, "é ", quadrado);
+fim.

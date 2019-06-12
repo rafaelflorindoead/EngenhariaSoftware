@@ -1,12 +1,13 @@
 #include<stdio.h>
 
 int main(){
-	int codigo;
+	int telefone;
 	float preco, novoPreco, desconto, valorParcela;
 	
 	printf("Entre com o código ");
-	scanf("%d", &codigo);
-	printf("Entre com o preço do produto ");
+	scanf("%d", &telefone);
+	printf("RG = %d", telefone);
+/*	printf("Entre com o preço do produto ");
 	scanf("%f", &preco);
 	if (codigo == 1){
 		desconto = (preco * 10)/100;
@@ -28,6 +29,6 @@ int main(){
 		printf("Valor Parcela 3 x R$ %.2f ", valorParcela);
 	}else{
 		printf("Código inválido!!!");
-	}
+	}*/
 	return 0;
 }

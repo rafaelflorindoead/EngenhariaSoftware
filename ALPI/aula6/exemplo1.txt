@@ -1,0 +1,25 @@
+//Crie um algoritmo que calcule o quadrado de um número inteiro positivo informado pelo usuário.
+
+algoritmo calcularQuadrado
+    procedimento quadradoNumero
+    var
+		num, quadrado: inteiro
+    inicio
+		escreva("Informe o número")
+		leia(num)
+		se (num > 0 ) entao
+			quadrado <- num * num
+		senao
+			escreva("Número negativo, fora do intervalo")
+		fim_se
+		escreva("O quadrado de ", num, "é ", quadrado);
+    fim_procedimento
+var
+	resp: caractere
+inicio
+	escreva("Deseja calcular o quadrado de um número? [s][n]")
+	leia(resp)
+	se((resp='s') ou (resp='S')) entao
+		quadradoNumero()
+	fim_se
+fim.

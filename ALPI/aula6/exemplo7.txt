@@ -1,0 +1,26 @@
+algoritmo ordenarNumero
+    procedimento ordenar(var n1: inteiro var n2:inteiro)
+    inicio
+		se (n1 > n2 ) entao
+			aux <- n1
+			n1 <- n2
+			n2 <- aux
+		senao
+			se (n1 = n2) entao
+				escreva("Número iguais")
+			senao
+				escreva("Já estão em ordem")
+			fim_se
+		fim_se
+    fim_procedimento
+var
+	num1, num2: inteiro
+inicio
+	escreva("Informe o número 1 e o número 2")
+	leia(num1, num2)
+	escreva("Num1 = ", num1)
+	escreva("Num1 = ", num2)
+	ordenar(num1, num2)
+	escreva("Num1 = ", num1)
+	escreva("Num1 = ", num2)
+fim.

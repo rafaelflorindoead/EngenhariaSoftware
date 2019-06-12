@@ -1,0 +1,19 @@
+//Construa um algoritmo que tenha um sub-rotina do tipo procedimento que obtenha os valores e imprima a soma de um vetor de 5 posições.
+
+algoritmo SomaVetor
+    procedimento somarVetor
+	var
+		vet: vetor [1..5] de inteiro
+		i, soma: inteiro
+	inicio
+		soma <- 0
+		para i de 1 ate 5 passo 1 faca
+			escreva("Informe o número ", i)
+			leia(vet[i])
+			soma <- soma + vet[i]
+		fim_para
+		escreva("Somatório do vetor = ", soma)
+	fim_procedimento
+inicio
+	somarVetor()
+fim.

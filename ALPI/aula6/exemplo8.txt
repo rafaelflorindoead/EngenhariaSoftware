@@ -1,0 +1,21 @@
+Algoritmo ParImpar
+	funcao verificarParImpar(num: inteiro):inteiro
+	inicio
+		se (num mod 2 = 0) entao
+			retorne 0
+		senao
+			retorne 1
+		fim_se
+	fim_funcao
+var
+	numero, retorno: inteiro
+inicio
+	escreva("Entre com o valor")
+	leia(valor)
+	retorno<-verificarParImpar(valor)
+	se (retorno = 0) entao
+		escreva("Número Par")
+	senao
+		escreva("Número Impar")
+	fim_se
+fim.

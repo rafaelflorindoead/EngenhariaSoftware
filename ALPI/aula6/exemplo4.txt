@@ -1,0 +1,22 @@
+algoritmo maiorElementoVetor
+    procedimento maiorElemento(vet: vetor[1..5] de inteiro)
+    var
+		maior: inteiro
+    inicio
+		maior <- vet[1]
+		para i de 2 ate 5 passo 1 faca
+			se (vet[i] > maior) entao
+				maior <- vet[i]
+			fim_se
+		fim_para
+		escreva ("Maior elemento = " maior)
+    fim_procedimento
+var
+	vetor: vetor[1..5] de inteiro
+inicio
+	para i de 1 ate 5 passo 1 faca
+		escreva("Informe o número ", i)
+		leia(vetor[i])	
+	fim_para
+	maiorElemento(vetor);
+fim.
