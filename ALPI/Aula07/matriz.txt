@@ -1,0 +1,18 @@
+algoritmo matriz
+var
+	mat: vetor [1..5,1..6] de inteiro
+	i, j, k: inteiro
+inicio
+	k<-1
+	para i de 1 ate 5 passo 1 faca
+		para j de 1 ate 6 passo 1 faca
+			se ((i mod 2 = 1) e (j mod 2 = 1)) 
+				mat[i,j] <- 1
+				k<-k+1
+			senao
+				mat[i,j] <- 0
+			fim_se
+		fim_para
+	fim_para
+
+fim.

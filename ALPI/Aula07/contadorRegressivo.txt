@@ -1,0 +1,18 @@
+algorito contadorRegressivo
+var
+	dia: inteiro
+inicio
+	para dia de 5 ate 0 passo -1 faca
+		escreval("Falta ", dia, "dias para o evento.")
+	fim_para
+	
+	dia <- 5
+	enquanto(dia>=0) faca
+		dia<- dia - 1
+	fim_enquanto
+fim.
+/*
+5 < 0
+
+*/
+

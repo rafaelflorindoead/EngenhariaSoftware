@@ -1,0 +1,33 @@
+algoritmo equacaoSegundoGrau
+var
+	a, b, c, delta: inteiro
+	xi, xii: real
+inicio
+	escreva("Entre com o valor de A")
+	leia(a)
+	escreva("Entre com o valor de B")
+	leia(b)
+	escreva("Entre com o valor de C")
+	leia(c)
+	delta <- sqr(b) - (4*a*c)
+	se (delta > 0) entao
+		escreva("A equação possui duas raizes reais distintas")
+		xi <- ((-1)*b + sqrt(delta)) / (2*a)
+		xii <- ((-1)*b - sqrt(delta)) / (2*a)
+		escreva("Xi = ", xi)
+		escreva("Xii = ", xii)
+	senao 
+		se(delta = 0) entao
+			escreva("A equação possui duas raizes reais iguais")
+			xi <- (b + sqrt(delta) / (2*a)
+			escreva("Xi = ", xi)
+		senao
+			se (delta < 0) entao
+				escreva("A equação não possui raizes reais")
+			senao
+				escreva("Valores errados!!!")
+			fim_se
+		fim_se
+	fim_se
+
+fim.

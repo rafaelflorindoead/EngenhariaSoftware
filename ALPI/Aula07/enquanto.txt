@@ -1,0 +1,26 @@
+Algoritmo somaNota
+var
+    media, soma: real
+    nota: vetor[1..80] de real
+    k: inteiro
+inicio
+    soma <- 0
+	k <- 1
+    //para k de 1 ate 80 passo 1 faca
+	enquanto(k <= 80) faca
+        leia(nota[k])//5,9,6,
+        soma <- soma + nota[k]//5, 14,20
+		k <- k + 1//2,3
+	fim_enquanto
+    //fim_para
+    media<-soma/80
+    //para k de 1 ate 80 passo 1 faca
+	k <- 1
+	enquanto(k <= 80) faca
+        escreva("Nota = ", nota[k])
+		k <- k + 1
+	fim_enquanto    
+//fim_para
+    escreva("Media = ", media)
+fim
+

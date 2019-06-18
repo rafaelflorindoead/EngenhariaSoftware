@@ -1,0 +1,17 @@
+algoritmo peso
+var
+	peso: vetor[1..10] de real
+	i: inteiro
+	soma, media: real
+inicio
+	soma<-0
+	para i de 1 ate 10 passo 1 faca
+		escreva("Informe o peso ", i)
+		leia(peso[i])
+		soma<-soma + peso
+	fim_para
+		escreva("Soma = ", soma)
+		media<-soma/10
+		escreva("Media = ", media)
+fim.
+

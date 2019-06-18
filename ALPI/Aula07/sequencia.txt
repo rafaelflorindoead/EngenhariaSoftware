@@ -1,0 +1,12 @@
+algoritmo sequencia
+var
+	i: inteiro
+inicio
+	para i de 1 ate 99 passo 2 faca
+		se (i < 99) entao
+			escreva(i, " - ") // 1 - 3 - 5 - 7 ... - 97 -
+		senao
+			escreva(i)
+			//99
+	fim_para
+fim.
