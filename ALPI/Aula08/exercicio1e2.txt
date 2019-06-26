@@ -1,0 +1,70 @@
+1-
+Algoritmo CadEmpregado
+Tipo​
+    pessoa = registro​
+        codigo: inteiro​
+        nome: caractere[45]​
+        sobrenome: caractere​[10]
+        dataNascimento: caractere​[10]
+        dataAdmissao: caractere​[10]
+        rg: caractere​[10]
+        salario: real        ​
+    Fim_registro​
+Var​
+    cadFunc: vetor[1..10] de pessoa​
+    i: inteiro
+Inicio​
+    para i de 1 ate 10 passo 1 faca
+        Escreva("Entre com o nome")​
+        Leia(cadFunc[i].nome)​
+        Escreva("Entre com o sobrenome")​
+        Leia(cadFunc[i].sobrenome)
+        Escreva("Entre com o dataNascimento")​
+        Leia(cadFunc[i].dataNascimento)
+        Escreva("Entre com o dataAdmissao")​
+        Leia(cadFunc[i].dataAdmissao)
+        Escreva("Entre com o salario")​
+        Leia(cadFunc[i].salario)
+    fim_para
+    para i de 1 ate 10 passo 1 faca
+        Escreval("Nome = ", cadFunc[i].nome)
+        Escreval("Sobrenome = ", cadFunc[i].sobrenome)
+        Escreval("Data Nascimento = ", cadFunc[i].dataNascimento)
+        Escreval("Data Admissão = ", cadFunc[i].dataAdmissao)​
+        Escreval("RG = ", cadFunc[i].rg)
+        Escreval("Salario = ", cadFunc[i].salario)
+    fim_para
+Fim.
+*************************************
+2- 
+Algoritmo BandaMusica
+Tipo​
+    banda = registro​
+        nomeBanda: caractere[45]​
+        tipoMusica: caractere​[10]
+        numeroIntegrantes: inteiro
+        posicaoRanking: inteiro      ​
+    Fim_registro​
+Var​
+    cadBanda: vetor[1..5] de banda
+    i: inteiro
+Inicio​
+    para i de 1 ate 10 passo 1 faca
+        Escreva("Entre com o nome da banda")​
+        Leia(cadFunc[i].nomeBanda)​
+        Escreva("Entre com o tipo de Musica")​
+        Leia(cadFunc[i].tipoMusica)​
+        Escreva("Entre com o numero de Integrantes")​
+        Leia(cadFunc[i].numeroIntegrantes)​
+        Escreva("Entre com o Posição Ranking")​
+        Leia(cadFunc[i].posicaoRanking)​
+    fim_para
+    para i de 1 ate 10 passo 1 faca
+        Escreva("Banda: ", cadFunc[i].nomeBanda)​
+        Escreva("Tipo de Musica: ", cadFunc[i].tipoMusica)​
+        Escreva("Número de Integrantes", cadFunc[i].numeroIntegrantes)​
+        Escreva("Posição Ranking: ", cadFunc[i].posicaoRanking)​
+    fim_para
+fim.
+*************************************************
+3 - 
