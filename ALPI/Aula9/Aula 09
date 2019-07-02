@@ -1,0 +1,119 @@
+Aula 09
+algoritmo matriz1
+procedimento preencher(matrizA: vetor [1..2, 1..2] de inteiro)
+var
+	i,j: inteiro
+inicio
+	para i de 1 ate 2 passo 1 faca
+		para j de 1 ate 2 passo 1 faca
+			matrizA[i,j]<-1
+		fim_para
+	fim_para
+fim_procedimento
+
+procedimento armazenar(posicao1:inteiro, posicao2: inteiro, matrizA: vetor [1..2, 1..2] de inteiro)
+inicio
+	para i de 1 ate 2 passo 1 faca
+		para j de 1 ate 2 passo 1 faca
+			matrizA[posicao1, posicao2]<-50
+		fim_para
+	fim_para
+fim_procedimento
+
+//programa principal
+var
+	matrizA: vetor [1..2, 1..2] de inteiro
+	posicao1, posicao2: inteiro
+inicio
+	preencher(matrizA)
+	escreva("Informe uma posição linha")
+	leia(posicao1)
+	escreva("Informe uma posição coluna")
+	leia(posicao2)
+	armazenar(posicao1, posicao2, matrizA)
+fim.
+******************************************
+Algoritmo BuscaVetor
+funcao verificarPosicao(valor: inteiro, vetor1: vetor [1..10] de inteiro): inteiro
+var
+	i: inteiro
+inicio
+	para i de 1 ate 10 passo 1 faca
+		se (vetor1[i] = valor) entao
+			retorne i
+		fim_se
+	fim_para
+	retorne 0;
+fim_funcao
+//programa principal
+var
+	vetor1: vetor [1..10] de inteiro
+	valor: inteiro
+inicio
+	escreva("Informe um valor a ser pesquisado")
+	leia(valor)
+	posicao <- verificarPosicao(valor, vetor1)
+	se(posicao) entao
+		escreva("Valor encontrado na posição: ", posicao)		
+	senao
+		escreva("Valor não encontrado")
+	fim_se
+fim_algoritmo
+****************************************
+Algoritmo Banco
+tipo
+	contaBancaria = registro
+	numConta: caractere[10]
+	agencia: caractere[10]
+	saldo: real
+	fim_registro
+var
+	contas: vetor[1..5] de contaBancaria
+	i: inteiro
+inicio
+	escreva("Entre com o Numero da Conta")
+	leia(contas[i].numConta)
+	escreva("Entre com a agência")
+	leia(contas[i].agencia)
+	escreva("Entre com o Saldo da Conta")
+	leia(contas[i].saldo)
+
+	para i de 1 ate 5 passo 1 faca
+		escreval("Nome: ", contas[i].nome)
+		escreval("Agência: ", contas[i].agencia)
+		escreval("Número da Conta: ", contas[i].numConta)
+		escreval("Saldo R$ ", contas[i].saldo)
+	fim_para
+fim.
+********************************************************************
+Algoritmo Colaboradores
+Tipo
+	empregado = registro
+	nome: caractere[10]
+	sobrenome: caractere[10]
+	dadaNascimento: caractere[10]
+	rg: caractere[10]
+	dataAdmissao: caractere[10]
+	salario: real
+	fim_registro
+var
+	empregados: vetor[1..5] de empregado
+	i: inteiro
+
+	para i de 1 ate 5 passo 1 faca
+		escreva("Entre com o Nome")
+		leia(empregados[i].nome)
+		escreva("Entre com o sobreNome")
+		leia(empregados[i].sobrenome)
+		escreva("Entre com a Data de Nascimento")
+		leia(empregados[i].dataNascimento)
+		escreva("Entre com o RG")
+		leia(empregados[i].rg)
+		escreva("Entre com a Data de Admissão")
+		leia(empregados[i].dataAdmissao)
+		escreva("Entre com o Salario")
+		leia(empregados[i].salario)
+	fim_para
+inicio
+
+fim.
