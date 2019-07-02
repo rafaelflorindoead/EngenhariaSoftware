@@ -1,0 +1,26 @@
+algoritmo
+//*****************************
+funcao verificarPosicao(n: inteiro, vetor1: vetor[1..8] de inteiro): inteiro
+var
+	i: inteiro	
+inicio
+	para i de 1 ate 8 passo 1 faca
+		se(n = vetor1[i]) entao
+			retorne i
+		fim_se
+	fim_para
+	retorno -1
+fim_funcao
+//*****************************
+var
+	vetor1: vetor[1..8] de inteiro
+	n, retornoPosicao: inteiro
+inicio
+	escreva("Informe o valor")
+	leia(n)
+	retornoPosicao<-verificarPosicao(n, vetor1)
+	se(retornoPosicao != -1) entao
+		escreva("O número ", n, " foi encontrado na posição ", retornoPosicao)
+	senao
+		escreva("O número não foi encontrado")
+fim.
